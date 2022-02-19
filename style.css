@@ -1,6 +1,6 @@
 @import "reset.css";
+@import "variable.css";
 /*
-@import "";
 @import "";
 @import "";
 @import "";
@@ -11,11 +11,6 @@ font-family: 'Open Sans', sans-serif;
 * {
   box-sizing: border-box;
 }
-:root {
-  --text-color: darkblue;
-  --background-color: greenyellow;
-  --accent-color: darkgreen;
-}
 body {
   margin: 0;
   font-family: Georgia, "Times New Roman", Times, serif;
@@ -24,4 +19,8 @@ body {
 a {
   text-decoration: none;
   color: var(--text-color);
+}
+.navbar__logo__favicon {
+  width: 30px;
+  height: 30px;
 }
