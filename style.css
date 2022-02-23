@@ -14,43 +14,77 @@ font-family: Georgia, "Times New Roman", Times, serif;
 }
 
 body {
-  margin: 0;
   font-family: Georgia, "Times New Roman", Times, serif;
+  cursor: default;
 }
 
 h1 {
   font-size: var(--font-large);
   font-weight: var(--weight-bold);
   color: var(--color-black);
-  margin: 16px 0px;
+  margin: 16px 0;
 }
 
 h2 {
   font-size: var(--font-regular);
   font-weight: var(--weight-semi-bold);
   color: var(--color-black);
-  margin: 8px 0px;
+  margin: 8px 0;
 }
 
 h3 {
   font-size: var(--font-regular);
   font-weight: var(--weight-regular);
   color: var(--color-black);
-  margin: 8px 0px;
+  margin: 8px 0;
+}
+
+a {
+  text-decoration: none;
+  color: var(--color-white);
 }
 
 p {
   font-size: var(--font-regular);
   font-weight: var(--weight-regular);
   color: var(--color-black);
-  margin: 4px 0px;
+  margin: 4px 0;
 }
 
-a {
-  text-decoration: none;
+/* Navbar */
+#navbar {
+  display: flex;
+  justify-content: space-between;
+  background-color: var(--color-orange);
+  align-items: center;
+  color: var(--color-white);
+  padding: 16px;
+}
+
+.navbar__logo {
+  font-size: var(--font-medium);
+  font-weight: var(--weight-semi-bold);
 }
 
 .navbar__logo__favicon {
   width: 30px;
   height: 30px;
+}
+
+.navbar__menu {
+  display: flex;
+}
+
+.navbar__menu__item {
+  padding: 8px 12px;
+  margin: 0 4px;
+  border-radius: var(--size-border-radius);
+}
+
+.navbar__menu__item.active {
+  border: 1px solid var(--color-white);
+}
+
+.navbar__menu__item:hover {
+  background-color: var(--color-yellow);
 }
