@@ -69,16 +69,15 @@
             alt="Suha's profile photo"
             class="home__avatar"
           />
-          <h1 class="home__title">
-            안녕하세요!<br />제 포트폴리오에 방문해주셔서 감사합니다!
-          </h1>
+          <h1 class="home__title">반갑습니다!</h1>
           <h2 class="home__description">
-            저는 일본에 거주중인 신입개발자 김수하입니다.
+            제 포트폴리오에 방문해주셔서 감사합니다!
+            <br />저는 일본에 거주중인 신입개발자 김수하입니다.
           </h2>
           <button class="home__contact">CONTACT ME</button>
         </section>
         <!-- section 2 = about -->
-        <section id="about">
+        <section id="about" class="section">
           <h1>About me</h1>
           <p>
             저는 2019년 8월에 워킹홀리데이로 일본에 왔으며,
@@ -91,7 +90,7 @@
               <div class="major__icon">
                 <i class="fa-brands fa-medapps"></i>
               </div>
-              <div class="major__title">Introduction</div>
+              <h2 class="major__title">Introduction</h2>
               <div class="major__description">
                 2020년 겨울에 일본의 세븐일레븐 편의점 어플을 사용하였는데
                 영수증 무료쿠폰이 어플 스탬프로 재적립이 되는 것을 경험하고
@@ -116,7 +115,7 @@
               <div class="major__icon">
                 <i class="fa-solid fa-graduation-cap"></i>
               </div>
-              <div class="major__title">Education</div>
+              <h2 class="major__title">Education</h2>
               <div class="major__description">
                 대구가톨릭대학교 졸업
                 <br />전공 : 작곡·실용음악과 <br />복수전공 : 경영학과
@@ -127,7 +126,7 @@
               <div class="major__icon">
                 <i class="fa-solid fa-mug-saucer"></i>
               </div>
-              <div class="major__title">Job</div>
+              <h2 class="major__title">Job</h2>
               <div class="major__description">
                 Starbucks : 공개채용 입사,3년 근무,
                 <br />주택상업단지매장,관광지특수매장,신규오픈매장,DT매장 근무.
@@ -142,48 +141,57 @@
           </div>
           <!-- jobs -->
           <div class="about__jobs">
-            <img
-              src="imgs/jobs/daegu_catholic_university.png"
-              alt="Catholic University of Daegu"
-              class="about__jobs--img"
-            />
-            <p class="job__name">Catholic University of Daegu</p>
-            <p class="job__period">
-              전공 : 작곡·실용음악과 <br />복수전공 : 경영학과
-              <br />봉사활동이력 : 128시간
-            </p>
-          </div>
-          <div class="about__jobs">
-            <img
-              src="imgs/jobs/starbucks.jpg"
-              alt="Starbucks coffee korea"
-              class="about__jobs--img"
-            />
-            <p class="job__name">Starbucks coffee korea</p>
-            <p class="job__period">
-              Starbucks : 공개채용 입사,3년 근무,
-              <br />주택상업단지매장,관광지특수매장,신규오픈매장,DT매장 근무.
-              <br />전국 매출30위권 DT(드라이브 쓰루)매장 매니저로 근무 및
-              <br />2017년 4분기 전국 칭찬파트너로 선정. mug상 4회이상 수상.
-              커피매스터. <br />담당 업무 :커뮤니티보드 제작, 신규바리스타 교육,
-              바리스타 라떼아트교육, 신규레시피 테스트, 비품 및 부재료 재고관리
-            </p>
-          </div>
-          <div class="about__jobs">
-            <img
-              src="imgs/jobs/oliveyoung.jpg"
-              alt="OLIVE YOUNG"
-              class="about__jobs--img"
-            />
-            <p class="job__name">OLIVE YOUNG</p>
-            <p class="job__period">
-              OLIVEYOUNG : 부산지역 매출 2위 매장 근무, 물품진열, 재고관리,
-              일본인 고객 응대
-            </p>
+            <div class="job">
+              <img
+                src="imgs/jobs/daegu_catholic_university.png"
+                alt="Catholic University of Daegu"
+                class="job__img"
+              />
+              <div class="job__description">
+                <p class="job__name">Catholic University of Daegu</p>
+                <p class="job__content">
+                  전공 : 작곡·실용음악과 <br />복수전공 : 경영학과
+                  <br />봉사활동이력 : 128시간
+                </p>
+              </div>
+            </div>
+            <div class="job">
+              <img
+                src="imgs/jobs/starbucks.jpg"
+                alt="Starbucks coffee korea"
+                class="job__img"
+              />
+              <div class="job__description">
+                <p class="job__name">Starbucks coffee korea</p>
+                <p class="job__content">
+                  Starbucks : 공개채용 입사,3년 근무,
+                  <br />주택상업단지매장,관광지특수매장,신규오픈매장,DT매장
+                  근무. <br />전국 매출30위권 DT(드라이브 쓰루)매장 매니저로
+                  근무 및 <br />2017년 4분기 전국 칭찬파트너로 선정. mug상
+                  4회이상 수상. 커피매스터. <br />담당 업무 :커뮤니티보드 제작,
+                  신규바리스타 교육, 바리스타 라떼아트교육, 신규레시피 테스트,
+                  비품 및 부재료 재고관리
+                </p>
+              </div>
+            </div>
+            <div class="job">
+              <img
+                src="imgs/jobs/oliveyoung.jpg"
+                alt="OLIVE YOUNG"
+                class="job__img"
+              />
+              <div class="job__description">
+                <p class="job__name">OLIVE YOUNG</p>
+                <p class="job__content">
+                  OLIVEYOUNG : 부산지역 매출 2위 매장 근무, 물품진열, 재고관리,
+                  일본인 고객 응대
+                </p>
+              </div>
+            </div>
           </div>
         </section>
         <!--section 3 = skills-->
-        <section id="skills">
+        <section id="skills" class="section">
           <h1>Skills</h1>
           <h2>Skills & Attributes</h2>
           <p></p>
@@ -244,7 +252,7 @@
           </ul>
         </section>
         <!--section 4 = work-->
-        <section id="work">
+        <section id="work" class="section">
           <h1>My work</h1>
           <h3>Projects</h3>
           <div class="work__categories">
@@ -294,7 +302,7 @@
           </div>
         </section>
         <!--section 5 = testimonials-->
-        <section id="testimonials">
+        <section id="testimonials" class="section">
           <h1>Testimonials</h1>
           <h3>See what they say about me</h3>
           <div class="testimonials">
@@ -338,7 +346,7 @@
           </div>
         </section>
         <!--section 6 = contact-->
-        <section id="contact">
+        <section id="contact" class="section">
           <h1 class="contact__title">Let's talk</h1>
           <h2 class="contact__email">gusuhawoo@gmail.com</h2>
           <div class="contact__links">
