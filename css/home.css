@@ -1,6 +1,6 @@
 /* Home */
 #home {
-  background: url("imgs/background.png") center/cover no-repeat;
+  background: url("../imgs/background.png") center/cover no-repeat;
   padding: 40px;
   text-align: center;
 }
