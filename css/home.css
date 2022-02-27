@@ -27,3 +27,9 @@
   border: 2px solid var(--color-pink);
   border-radius: var(--size-border-radius);
 }
+
+.home__contact:hover {
+  color: var(--color-orange);
+  background-color: var(--color-yellow);
+  border: 2px solid var(--color-orange);
+}

@@ -86,6 +86,15 @@ button {
 
 /* For below 768px screen width */
 @media screen and (max-width: 768px) {
+  :root {
+    /* Font size */
+    --font-large: 30px;
+    --font-medium: 18px;
+    --font-regular: 16px;
+    --font-small: 14px;
+    --font-micro: 12px;
+  }
+
   .navbar__toggle-btn {
     display: block;
   }
@@ -100,6 +109,10 @@ button {
     padding: 16px;
   }
 
+  .navbar__logo {
+    font-size: var(--font-large);
+  }
+
   .navbar__menu {
     flex-direction: column;
     text-align: center;
@@ -109,6 +122,11 @@ button {
 
   .navbar__menu.open {
     display: block;
+  }
+
+  .section {
+    padding: 16px;
+    padding-top: 40px;
   }
 
   .about__majors {
@@ -123,6 +141,11 @@ button {
     flex-direction: column;
   }
 
+  .category__btn {
+    margin: 4px 0;
+    width: 100%;
+  }
+
   .project {
     flex-grow: 1;
   }
@@ -131,8 +154,20 @@ button {
     display: none;
   }
 
+  .testimonial {
+    flex-direction: column;
+  }
+
   .testimonial__avatar {
     width: 80px;
     height: 80px;
+  }
+
+  .testimonial__avatar:nth-child(even) {
+    margin: 0;
+  }
+
+  .testimonial__speech-bubble {
+    order: 1;
   }
 }
