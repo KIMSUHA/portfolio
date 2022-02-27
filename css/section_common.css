@@ -32,13 +32,9 @@
   transition: all var(--animation-duration) ease;
 }
 
-.major__icon:hover {
-  border: 1px solid var(--color-blue);
-}
-
 .major__icon:hover i {
   color: var(--color-blue);
-  transform: rotate(35deg) scale(1.1);
+  transform: rotate(-35deg) scale(1.1);
 }
 
 .major__title,

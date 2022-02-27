@@ -3,8 +3,8 @@
 // Navbar : Make navbar transparent when it is on the top
 const navbar = document.querySelector('#navbar');
 const navbarHeight = navbar.getBoundingClientRect().height;
-document.addEventListener('scroll',() => {
-  if(window.scrollY > navbarHeight) {
+document.addEventListener('scroll', () => {
+  if (window.scrollY > navbarHeight) {
     navbar.classList.add('navbar--dark');
   } else {
     navbar.classList.remove('navbar--dark');
@@ -19,8 +19,14 @@ navbarMenu.addEventListener('click', (event) => {
   if (link == null) {
     return;
   }
-
+  navbarMenu.classList.remove('open');
   scrollIntoView(link);
+});
+
+// navbar toggle btn for small screen
+const navbarToggleBtn = document.querySelector('.navbar__toggle-btn');
+navbarToggleBtn.addEventListener('click', () => {
+  navbarMenu.classList.toggle('open');
 });
 
 // Handle click on the "contact me" btn on home
@@ -66,7 +72,6 @@ workBtnContainer.addEventListener('click', (e) => {
   active.classList.remove('selected');
   const target = e.target.nodeName === 'BUTTON' ? e.target : e.target.parentNode;
   e.target.classList.add('selected');
-
 
   projectContainer.classList.add('animation-out');
   setTimeout(() => {
