@@ -5,6 +5,7 @@
 
 .contact__title,
 .contact__email,
+.contact__talk,
 .contact__rights {
   color: var(--color-orange);
 }

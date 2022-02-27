@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+    <title>YouTube Clone Coding</title>
+    <script
+      src="https://kit.fontawesome.com/94e8d9cd83.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="main.js" defer></script>
+  </head>
+  <body>
+    <!-- Header -->
+    <header>
+      <div class="logo">
+        <i class="fab fa-youtube"></i>
+        <span class="title">Youtube</span>
+      </div>
+      <div class="icons">
+        <i class="fas fa-search"></i>
+        <i class="fas fa-ellipsis-v"></i>
+      </div>
+    </header>
+
+    <!-- Video Player -->
+    <section class="player">
+      <video controls src="IMG_3813.MOV"></video>
+    </section>
+
+    <div class="infoAndUpNext">
+      <!--Video Info-->
+      <section class="info">
+        <!--metadata-->
+        <div class="metadata">
+          <ul class="hashtags">
+            <li>#Travel</li>
+            <li>#France</li>
+            <li>#Summer</li>
+          </ul>
+          <div class="titleAndButton">
+            <span class="title clamp"
+              >Summer Travel In France (Moustiers Sainte Marie) 
+              <br>여름 프랑스 여행
+              (무스티에 생트마리)</br>
+            </span>
+
+            <button class="moreBtn">
+              <i class="fas fa-caret-down"></i>
+            </button>
+          </div>
+          <span class="views">1M views 1 month ago</span>
+        </div>
+        <!--actions-->
+        <div class="actions">
+          <li>
+            <button><i class="active fas fa-thumbs-up"></i>1K</button>
+          </li>
+          <li>
+            <button><i class="fas fa-thumbs-down"></i>0</button>
+          </li>
+          <li>
+            <button><i class="fas fa-share"></i>Share</button>
+          </li>
+          <li>
+            <button><i class="fas fa-plus"></i>Save</button>
+          </li>
+          <li>
+            <button><i class="fab fa-font-awesome-flag"></i>Report</button>
+          </li>
+        </div>
+        <!--channel Description-->
+        <div class="channel">
+          <div class="metadata">
+            <img src="image/1.jpg" alt="" />
+            <div class="info">
+              <span class="name">Clone Coding by Suha</span>
+              <span class="subscribers">1M subcribers</span>
+            </div>
+          </div>
+          <button class="subscribe">subscribe</button>
+        </div>
+      </section>
+      <!--Video Next-->
+      <section class="upNext">
+        <span class="title">Up next</span>
+        <ul>
+          <li class="item">
+            <div class="img"><img src="image/2.jpg" alt="" /></div>
+            <div class="info">
+              <span class="title">Summer Travel In Taiwan</span>
+              <span class="name">Clone Coding by Suha</span>
+              <span class="views">29K views</span>
+            </div>
+            <button class="moreBtn"><i class="fas fa-ellipsis-v"></i></button>
+          </li>
+        </ul>
+        <ul>
+          <li class="item">
+            <div class="img"><img src="image/2.jpg" alt="" /></div>
+            <div class="info">
+              <span class="title"
+                >Summer Travel In Taiwan(Taipei & Jiyfen)</span
+              >
+              <span class="name">Clone Coding by Suha</span>
+              <span class="views">25K views</span>
+            </div>
+            <button class="moreBtn"><i class="fas fa-ellipsis-v"></i></button>
+          </li>
+        </ul>
+        <ul>
+          <li class="item">
+            <div class="img"><img src="image/2.jpg" alt="" /></div>
+            <div class="info">
+              <span class="title">Summer Travel In Jiyfen</span>
+              <span class="name">Clone Coding by Suha</span>
+              <span class="views">32K views</span>
+            </div>
+            <button class="moreBtn"><i class="fas fa-ellipsis-v"></i></button>
+          </li>
+        </ul>
+      </section>
+    </div>
+  </body>
+</html>
